@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGS | Account</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="img/logocgs.png" width="120px"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products1.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+            <a href="cart.html"><img src="img/cart.png" width="30px" height="30px"></a>
+            <img src="img/menu.png" class="menu-icon" onclick="menutoggle()">
+        </nav>
+    </div>
+
+    <!-- account-page -->
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <!--<img src="img/accountbg.jpg" width="100%"> -->
+                </div>
+
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="Indicator">
+                        </div>
+
+                        <form id="LoginForm">
+                            <div class="msg-log"></div>
+                            <input type="text" placeholder="Username" id="UserLog">
+                            <input type="password" placeholder="Password" id="PassLog">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="">Forgot Password</a>
+                        </form>
+
+                        <form id="RegForm">
+                            <div class="msg-reg"></div>
+                            <input type="text" placeholder="Username" id="UserReg">
+                            <input type="email" placeholder="Email" id="EmailReg">
+                            <input type="password" placeholder="Password" id="PassReg">
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Official Store</h3>
+                    <div class="app-logo">
+                        <a href="https://www.tokopedia.com/completegamingstore"><img src="img/tokopedia.png"></a>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="img/logocgs.png">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/completegamings/"><img src="img/insta.png">Instagram</a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=62895601889985"><img src="img/whatsapp.png" alt=""> Whatsapp</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 - Vix</p>
+        </div>
+    </div>
+    <!--Toggle Menu JS-->
+    <script src="script.js"></script>
+    <script src="signup.js"></script>
+    <script src="signin.js"></script>
+</body>
+</html>
